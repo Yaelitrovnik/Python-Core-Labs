@@ -1,0 +1,71 @@
+# Create variables of different types
+name = "Yael"
+age = 19
+height = 1.62
+is_hungry = True
+skills = ["Python", "Git", "HTML"]
+
+# Create a dictionary with some of the variables
+profile = {
+    "name": name,
+    "age": age,
+    "skills": skills
+}
+
+# Print the variables with descriptive labels
+print("Name:", name)
+print("Age:", age)
+print("Height (m):", height)
+print("Is Hungry:", is_hungry)
+print("Skills:", skills)
+print("Profile Dictionary:", profile)
+
+# Perform basic operations
+print("\nAge in 5 years:", age + 5)
+print("Number of skills:", len(skills))
+print("First skill:", skills[0])
+
+# Bonus tasks
+print("\nName in uppercase:", name.upper())
+print("Name in lowercase:", name.lower())
+
+# Add a new skill
+skills.append("JavaScript")
+print("Updated skills list:", skills)
+
+# Add a new key-value pair to the dictionary
+profile["country"] = "Israel"
+print("Updated profile dictionary:", profile)
+
+# === EXTENSION TASKS ===
+
+# 1. Complex data structure: List of dictionaries
+people = [
+    {"name": "Yael", "age": 19},
+    {"name": "Guy", "age": 14},
+    {"name": "Maayan", "age": 20}
+]
+print("\nList of people (list of dictionaries):", people)
+
+# 2. f-string formatting
+print(f"\nHello, {name}! You are {age} years old and {height} meters tall.")
+
+# 3. Using input()
+user_fav_language = input("\nWhat's your favorite programming language? ")
+print(f"You said your favorite language is: {user_fav_language}")
+
+# 4. Type conversion
+num_str = "100"
+converted_num = int(num_str)
+print(f"\nConverted '100' to integer: {converted_num} (type: {type(converted_num)})")
+
+float_num = float("12.34")
+print(f"Converted '12.34' to float: {float_num} (type: {type(float_num)})")
+
+# 5. Checking types
+print("\nType of name:", type(name))
+print("Type of age:", type(age))
+print("Type of height:", type(height))
+print("Type of is_hungry:", type(is_hungry))
+print("Type of skills:", type(skills))
+print("Type of profile:", type(profile))
