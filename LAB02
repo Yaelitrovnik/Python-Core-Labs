@@ -1,0 +1,79 @@
+# --- Conditional Statements ---
+age = 20  # You can change this value to test different outputs
+
+if age < 13:
+    print("You are a child.")
+elif 13 <= age < 20:
+    print("You are a teenager.")
+else:
+    print("You are an adult.")
+
+# --- Loop Over a List ---
+tech_skills = ["Python", "Git", "HTML", "CSS"]
+
+for skill in tech_skills:
+    print(f"Skill: {skill}")
+
+# --- While Loop ---
+counter = 0
+while counter < 5:
+    print(f"Counter is at: {counter}")
+    counter += 1  # Important to avoid infinite loop!
+
+# --- Loop with Conditional Logic ---
+users = ["admin", "alice", "bob", "carol"]
+
+for user in users:
+    if user == "admin":
+        print(f"Hello {user}, would you like to see the system status?")
+    else:
+        print(f"Hello {user}, thank you for logging in.")
+
+# --- Nested Loops with 2D Data Structure ---
+grid = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+for i, row in enumerate(grid):
+    for j, value in enumerate(row):
+        print(f"Element at position ({i},{j}) is {value}")
+
+# === Extension Tasks ===
+
+# 1. Loop with break
+print("\nLoop with break:")
+for num in range(10):
+    if num == 5:
+        print("Breaking the loop at 5!")
+        break
+    print(num)
+
+# 2. Loop with continue
+print("\nLoop with continue:")
+for num in range(7):
+    if num % 2 == 0:
+        continue  # Skip even numbers
+    print(num)
+
+# 3. List comprehension for squares
+squares = [x**2 for x in range(10)]
+print("\nSquares from 0 to 9:", squares)
+
+# 4. Ternary conditional operator
+condition = True
+result = "yes" if condition else "no"
+print("\nTernary result:", result)
+
+# 5. Nested dictionary and iteration
+nested_dict = {
+    "fruits": {"apple": 3, "banana": 5},
+    "vegetables": {"carrot": 7, "lettuce": 2}
+}
+
+print("\nIterate nested dictionary:")
+for category, items in nested_dict.items():
+    print(f"Category: {category}")
+    for item, quantity in items.items():
+        print(f"  {item}: {quantity}")
