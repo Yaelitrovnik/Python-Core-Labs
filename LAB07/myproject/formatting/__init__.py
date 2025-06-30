@@ -1,0 +1,1 @@
+from myproject.formatting.timestamp import get_formatted_timestamp

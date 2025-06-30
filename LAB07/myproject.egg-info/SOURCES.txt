@@ -1,0 +1,10 @@
+setup.py
+myproject/__init__.py
+myproject/core.py
+myproject.egg-info/PKG-INFO
+myproject.egg-info/SOURCES.txt
+myproject.egg-info/dependency_links.txt
+myproject.egg-info/requires.txt
+myproject.egg-info/top_level.txt
+myproject/formatting/__init__.py
+myproject/formatting/timestamp.py

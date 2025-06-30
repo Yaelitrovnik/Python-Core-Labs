@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: myproject
+Version: 0.1
+Summary: Reusable Python utility package with greetings and timestamps.
+Author: Yael Litrovnik
+Requires-Dist: requests
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary
