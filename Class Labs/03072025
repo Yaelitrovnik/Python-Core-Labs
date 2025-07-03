@@ -1,0 +1,30 @@
+#Task 1
+status = input("Enter server status")
+if status == "running":
+    print("the server is opertional")
+elif status == "stopped":
+    print("the server is down")
+elif status == "error":
+    print("the server is an error state")
+else:
+    print("invalid status entered")
+
+#Task2
+list_servers = {"server1", "server2", "server3"}
+for server in list_servers:
+    print(f"ping to {server} successful")
+
+#Task3
+dictionary_servers = {
+    "server1" : "running",
+    "server2" : "error",
+    "server3" : "stopped",
+} 
+for server, status in dictionary_servers.items():
+    if status == "error":
+        print(f"Restarting {server}...")
+    else:
+        print(f"{server} is healthy")
+
+
+
